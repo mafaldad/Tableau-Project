@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Dashboard</title>
+</head>
+<body>
+    <h1>My Tableau Dashboard</h1>
+    <div class="tableauPlaceholder" id="viz">
+        <noscript><a href="https://public.tableau.com">View Tableau Dashboard</a></noscript>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        const vizUrl = tableauURL;
+        const vizContainer = document.getElementById('viz');
+        const vizElement = document.createElement('iframe');
+        vizElement.src = vizUrl;
+        vizElement.width = '100%';
+        vizElement.height = '600px';
+        vizContainer.appendChild(vizElement);
+    </script>
+</body>
+</html>
